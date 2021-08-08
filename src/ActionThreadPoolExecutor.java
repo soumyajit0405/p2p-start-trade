@@ -13,7 +13,7 @@ public class ActionThreadPoolExecutor {
 		ScheduleDAO sdo= new ScheduleDAO();
 		if (sdo.getBlockChainSettings().equalsIgnoreCase("Y") ) {
 		ArrayList<HashMap<String, String>> pendingTrades = scd.getPendingTrades();
-		System.out.println("List of Pending Trades");
+		System.out.println(" List of Pending Trades");
 		if (pendingTrades.size() > 0) {
 
 			ExecutorService executor = Executors.newFixedThreadPool(pendingTrades.size());// creating a pool of 1000

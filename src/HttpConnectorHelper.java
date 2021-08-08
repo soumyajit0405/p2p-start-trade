@@ -18,7 +18,7 @@ public class HttpConnectorHelper {
 	private static final String GET_URL = "https://localhost:9090/SpringMVCExample";
 
 	private static final String POST_URL = "http://168.61.22.57:6380/createuser";
-
+ 
 	
 	public static void main(String[] args) throws IOException {
 

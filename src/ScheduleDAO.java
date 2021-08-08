@@ -129,11 +129,11 @@ public class ScheduleDAO {
 		// SimpleDateFormat dt2 = new SimpleDateFormat("22:10");
 		System.out.println(dt2.format(d1));
 		String date = dt1.format(d1) + " " + dt2.format(d1) + ":00";
-
+ 
 		String query = "update all_sell_orders set order_status_id=4 where transfer_start_ts='" + date
 				+ "' and order_status_id=3";
 		pstmt = con.prepareStatement(query);
-		// pstmt.setString(1, date);
+		// pstmt.setString(1, date);	
 		pstmt.executeUpdate();
 		
 		 query = "update all_contracts set contract_status_id=6 where sell_order_id in (select sell_order_id from all_sell_orders where transfer_start_ts='" + date

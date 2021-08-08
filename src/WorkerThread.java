@@ -64,7 +64,7 @@ class WorkerThread implements Runnable {
 		}
 		finally {
 			if (ScheduleDAO.con != null) {
-				try {
+				try { 
 					ScheduleDAO.con.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
