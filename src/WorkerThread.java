@@ -39,7 +39,7 @@ class WorkerThread implements Runnable {
 			inputDetails1.put("sellerAddress", userAddress);
 			inputDetails1.put("sellerPrivatekey", privateKey);
 			HashMap<String, String> responseFrombcnetwork = httpconnectorhelper
-					.sendPostWithToken("http://159.89.175.110:3000/api/startTrade", inputDetails1, 1,"");
+					.sendPostWithToken("http://159.89.175.110:5005/api/startTrade", inputDetails1, 1,"");
 			// HashMap<String,String> responseAfterParse =
 			// cm.parseInput(responseFrombcnetwork);
 			if (responseFrombcnetwork.get("Status").equalsIgnoreCase("Trading Started")) {

@@ -49,7 +49,7 @@ public class ScheduleDAO {
 			HashMap<String, String> data = new HashMap<>();
 			data.put("orderId", (rs.getString("order_id")));
 			data.put("privateKey", rs.getString("private_key"));
-			data.put("userAddress", rs.getString("userAddress"));
+			data.put("userAddress", rs.getString("user_address"));
 			data.put("generalOrderId", Integer.toString(rs.getInt("sell_order_id")));
 			data.put("blockChainOrderId", Integer.toString(rs.getInt("all_blockchain_orders_id")));
 			al.add(data);
